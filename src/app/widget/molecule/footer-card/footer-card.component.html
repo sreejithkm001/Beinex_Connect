@@ -1,0 +1,11 @@
+<div class="ax-footercards">
+    <img [src]="image" class="ax-footercards__flag">
+    <h5 class="ax-footercards__heading">{{heading}}</h5>
+    <p class="ax-footercards__address">
+        <ng-container *ngFor="let line of addresslines">
+            {{line}} <br>
+        </ng-container>
+        Phone:{{phone}} <br>
+        Email:{{email}}
+    </p>
+</div>

@@ -1,0 +1,82 @@
+@import "../../../../assets/scss/mixin.scss";
+
+.ax-topbar {
+  border-bottom: 2px solid rgba(245, 245, 245, 1);
+  height: 45px;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  &__left {
+    margin-top: 10px;
+    padding-left: 30px;
+    & i {
+      padding-right: 10px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__right {
+    display: flex;
+    padding-right: 43px;
+    &__dot {
+      color:rgba(4, 187, 242, 1);
+      font-size: 30px;
+    }
+    & i {
+      padding-right: 10px;
+    }
+    h6 {
+      color: rgba(102, 102, 102, 1);
+      font-weight: 400;
+      font-size: 14px;
+      padding-top: 20px;
+      padding-left: 5px;
+      padding-right: 10px;
+    }
+    &__btn {
+      margin-top: 10px;
+    }
+  }
+}
+
+@include mobile {
+  .ax-topbar__right__btn {
+    width: 160px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  .ax-topbar__right {
+    padding: 13px;
+    &__btn {
+      margin-top: 0px;
+    }
+    h6,
+    span {
+      display: none;
+    }
+  }
+  .ax-topbar__left {
+    margin-top: 20px;
+  }
+}
+@include tablet {
+  .ax-topbar__right {
+    padding: 13px;
+  }
+  .ax-topbar__right span,
+  h6 {
+    display: none;
+  }
+  .ax-topbar__right__btn {
+    width: 150px;
+    padding: 5px;
+    margin-left: 70px;
+    margin-top: 0px;
+  }
+  .ax-topbar__left {
+    margin-top: 10px;
+  }
+}

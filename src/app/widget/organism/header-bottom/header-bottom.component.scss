@@ -1,0 +1,16 @@
+.navbar {
+  height: 45px;
+  max-width: 1500px;
+  margin: auto;
+  &-brand {
+    padding-left: 18px;
+  }
+  &-nav {
+    margin-left: auto;
+  }
+  a {
+    color: #10385b;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}

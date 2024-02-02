@@ -1,0 +1,29 @@
+<div class="ax-offerings__cards">
+    <div class="ax-offerings__cards">
+        <h4>Industry</h4>
+        <ul>
+            <li *ngFor="let list of industry">
+                <img src="{{list.icon}}" alt="">
+                {{list.label}}
+                <img class="card--arrow" src="{{list.arrow}}" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="ax-offerings__cards ax-offerings__cards--2">
+        <h4>Offerings</h4>
+        <ul>
+            <li *ngFor="let offers of offerings">
+                {{offers.label}}
+                <img class="card--arrow" src="{{offers.arrow}}" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="ax-offerings__cards ax-offerings__cards--3">
+        <h4>Description</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat.
+        </p>
+    </div>
+</div>
